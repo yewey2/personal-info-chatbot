@@ -1,0 +1,10 @@
+SECTION: Skills
+
+Programming: Python, SQL, NodeJS, Java
+LLM: LangChain, OpenAI Agents, Azure Foundry
+Data Engineering: Pandas, NoSQL, PySpark
+Data Analytics: PowerBI, Databricks
+AI/ML: PyTorch, TensorFlow, sci-kit learn
+CI/CD: Docker, Kubernetes (AKS), Terraform
+Cloud: Azure, AWS, Firebase, Heroku
+Web Dev: FastAPI, React, SvelteJS

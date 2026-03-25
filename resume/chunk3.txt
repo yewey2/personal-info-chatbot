@@ -1,0 +1,9 @@
+SECTION: Work Experience
+Job Title: Software Developer
+Company: Lync.sg
+Duration: Jul 2022 – Apr 2023
+
+Responsibilities and Achievements:
+- Leveraged Telegram API to build a sophisticated chatting platform at a local dating social enterprise.
+- Facilitated connections for over 40 individuals, with over 92% of users with genuine chatting experience.
+- Implemented a NoSQL database in Firebase, facilitating administrative ease of updating user-base.

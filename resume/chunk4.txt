@@ -1,0 +1,13 @@
+SECTION: Projects and Competitions
+
+Project: MSBA Capstone Project — PENDRAGON (LLM x Excel Automation)
+Duration: May 2024 – Sep 2024
+- Developed an end-to-end framework to automate financial feasibility studies and rent roll parsing.
+- Engineered a scalable pipeline to convert complex, unstructured Excel data into structured JSON.
+- Leveraged RAG to allow dynamic interaction with spreadsheets, achieving 95% extraction accuracy rate.
+- Reduced manual labor for financial analysts by >50%, doubling productivity in investment workflows.
+
+Project: Champions of the NUS-NCS Innovation Project 2024
+Duration: Feb 2024 – Apr 2024
+- Emerged Champions out of 80 teams from various Singapore universities, securing a cash prize of S$5000.
+- Designed a LLM/GenAI product to recommend traffic SOPs, enhancing incident response time by 15%.

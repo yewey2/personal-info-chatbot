@@ -1,0 +1,11 @@
+SECTION: Personal Information & Profile
+Name: Sim Yew Chong
+Email: yewchongsim@gmail.com
+Phone: +65 9144 9876
+LinkedIn: yewchong-sim
+GitHub: yewey2
+
+Profile:
+GenAI Specialist dedicated to bridging technical architecture with business goals and operational efficiency.
+Proven track record in designing and deploying production-grade LLM solutions in enterprise environments.
+Background in engineering and business analytics with First Class Honours and full scholarship from NUS.

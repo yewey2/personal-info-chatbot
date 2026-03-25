@@ -1,0 +1,16 @@
+SECTION: Work Experience
+Job Title: Data Scientist (GenAI Specialist)
+Company: CapitaLand
+Duration: Sep 2023 – Present
+
+Responsibilities and Achievements:
+- Architected an LLM solution to analyze investment models in Excel, boosting productivity by >50%.
+- Created a LLM-powered lease-to-rents parser on Streamlit, achieving 95% accuracy in data parsing.
+- Spearheaded architecture design for Ascott Cubby in LangChain, optimizing response quality by 80%.
+- Automated market intelligence and analysis for real estate investments, directly informing 11 deals.
+- Orchestrated the consolidation of 12 departmental policies into a chatbot for >5000 internal employees.
+- Implemented multi-modal RAG with Azure AI Search vector index, reducing hallucinations by 30%.
+- Co-developed AI architecture featuring streaming output, multi-document summary, and web search.
+- Deployed multiple production-grade GenAI applications via Docker containers on AKS with auto-scaling.
+- Maintained CI/CD pipelines in Azure DevOps, streamlining GenAI deployment across 3 environments.
+- Trained over 40 corporate staff in Prompt Engineering, resulting in an average review score of over 84%.
