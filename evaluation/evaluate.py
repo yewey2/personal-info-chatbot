@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from rag.ingest import load_index
-from rag.retriever import retrieve
 from agent.chat import chat, is_safe_query
 
 
@@ -38,8 +37,7 @@ def run_evaluation():
             response = "I'm here to answer questions about Yew Chong's professional background. I can't help with that request!"
             retrieved_chunks = []
         else:
-            retrieved_chunks = retrieve(question, top_k=2, score_threshold=0.3)
-            response, _ = chat(question, conversation_history=[], context_chunks=retrieved_chunks)
+            response, _, retrieved_chunks = chat(question, conversation_history=[])
 
         elapsed_ms = (time.perf_counter() - start) * 1000
 

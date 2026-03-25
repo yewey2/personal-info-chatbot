@@ -91,20 +91,17 @@ if user_input:
         st.markdown(user_input)
 
     from agent.chat import is_safe_query, chat
-    from rag.retriever import retrieve
 
     if not is_safe_query(user_input):
         reply = "I'm here to answer questions about Yew Chong's professional background. I can't help with that request! 😊"
         sources = []
     else:
         try:
-            context_chunks = retrieve(user_input, top_k=2, score_threshold=0.3)
-            reply, st.session_state.conversation_history = chat(
+            reply, st.session_state.conversation_history, retrieved_chunks = chat(
                 user_input,
                 st.session_state.conversation_history,
-                context_chunks,
             )
-            sources = context_chunks
+            sources = retrieved_chunks
         except Exception as e:
             reply = "Something went wrong. Please try again or contact yewchongsim@gmail.com"
             sources = []
