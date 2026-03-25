@@ -7,6 +7,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+EMBEDDINGS_MODEL = os.environ.get("EMBEDDINGS_MODEL", "text-embedding-3-large")
+
 INDEX_DIR = os.path.join(os.path.dirname(__file__), "faiss_index")
 INDEX_PATH = os.path.join(INDEX_DIR, "index.faiss")
 CHUNKS_PATH = os.path.join(INDEX_DIR, "chunks.pkl")
@@ -31,7 +33,7 @@ def build_index(resume_dir: str) -> None:
         texts.append(text)
 
     # Embed all chunks
-    response = client.embeddings.create(model="text-embedding-3-large", input=texts)
+    response = client.embeddings.create(model=EMBEDDINGS_MODEL, input=texts)
     embeddings = np.array([item.embedding for item in response.data], dtype="float32")
 
     # Normalize for cosine similarity via inner product

@@ -19,7 +19,7 @@ with st.sidebar:
     )
 
     st.subheader("📚 Knowledge Base")
-    st.write("✅ Resume (6 chunks loaded)")
+    st.write("✅ Resume (5 chunks loaded)")
 
     st.divider()
 

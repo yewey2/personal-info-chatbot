@@ -1,8 +1,11 @@
 import json
+import os
 from openai import OpenAI
 from dotenv import load_dotenv
 
 load_dotenv()
+
+CHAT_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5.4")
 
 SYSTEM_PROMPT_BASE = """You are an AI assistant representing Sim Yew Chong. \
 Answer questions about Yew Chong's background, experience, skills, and projects \
@@ -130,7 +133,7 @@ def get_response(
     if iteration < max_iteration and tools:
         # Normal call with tools
         response = client.chat.completions.create(
-            model="gpt-5.4",
+            model=CHAT_MODEL,
             messages=[
                 system_message,
                 *recent_history,
@@ -144,7 +147,7 @@ def get_response(
     elif iteration >= max_iteration:
         # Max iterations reached, force a final response without tools
         response = client.chat.completions.create(
-            model="gpt-5.4",
+            model=CHAT_MODEL,
             messages=[
                 system_message,
                 *recent_history,
@@ -157,7 +160,7 @@ def get_response(
     else:
         # No tools provided
         response = client.chat.completions.create(
-            model="gpt-5.4",
+            model=CHAT_MODEL,
             messages=[
                 system_message,
                 *recent_history,

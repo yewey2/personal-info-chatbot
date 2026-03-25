@@ -9,7 +9,7 @@ User Input → Safety Check (is_safe_query)
                     ↓ PASS
             RAG Retriever (FAISS, top_k=2)
                     ↓
-            OpenAI Chat (gpt-4o)
+            OpenAI Chat (gpt-5.4)
             + Sliding Window History (last 3 turns)
                     ↓
             Response + Sources Shown in UI

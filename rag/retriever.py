@@ -1,9 +1,12 @@
+import os
 import numpy as np
 from openai import OpenAI
 from dotenv import load_dotenv
 from rag.ingest import load_index
 
 load_dotenv()
+
+EMBEDDINGS_MODEL = os.environ.get("EMBEDDINGS_MODEL", "text-embedding-3-large")
 
 
 def retrieve(query: str, top_k: int = 2, score_threshold: float = 0.3) -> list[dict]:
@@ -12,7 +15,7 @@ def retrieve(query: str, top_k: int = 2, score_threshold: float = 0.3) -> list[d
     index, chunks = load_index()
 
     # Embed the query
-    response = client.embeddings.create(model="text-embedding-3-large", input=[query])
+    response = client.embeddings.create(model=EMBEDDINGS_MODEL, input=[query])
     query_embedding = np.array(response.data[0].embedding, dtype="float32").reshape(1, -1)
 
     # Normalize
